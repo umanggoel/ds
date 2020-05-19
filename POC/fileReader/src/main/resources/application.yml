@@ -1,0 +1,16 @@
+server:
+ port: 8980
+ servlet:
+  context-path: /file-reader
+ 
+management:
+  server:
+   port: 8981 
+
+rateLimiter:
+ enabled: true
+ timeSlot: 5
+ limit: 10
+ 
+csv:
+ path: /users/ugoel/csvs/
