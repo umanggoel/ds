@@ -1,7 +1,6 @@
 package com.company.graph;
 
-import com.company.arrays.Numbers;
-import com.company.arrays.Numbers2;
+import com.company.arrays.StonesRemovalGame;
 
 import java.util.Arrays;
 
@@ -107,8 +106,18 @@ public class Main {
         articulationPoint.createEdge(6,7);
 
         //add this edge to test that it is strongly connected graph
-        articulationPoint.createEdge(2,5);
+       // articulationPoint.createEdge(2,5);
 
-        articulationPoint.getArticulationPoints(1).forEach(entry-> System.out.println(entry));
+       // articulationPoint.getArticulationPoints(1).forEach(entry-> System.out.println(entry));
+        int [][] edges = new int[][]{{9,10},{5,8},{2,6},{1,5},{3,8},{4,9},{8,10},{4,10},{6,8},{7,9}};
+        RedundantConnection redundantConnection = new RedundantConnection();
+       // redundantConnection.findRedundantConnection(edges);
+
+        int [][] stones = new int[][]{{0,0},{0,1},{1,0},{1,2},{2,1},{2,2}};
+        StonesRemovalGame stonesRemovalGame = new StonesRemovalGame();
+       // stonesRemovalGame.removeStones(stones);
+
+        MinSwapCouples minSwapCouples =new MinSwapCouples();
+        minSwapCouples.minSwapsCouples(new int[]{5,4,2,6,3,1,0,7});
     }
 }

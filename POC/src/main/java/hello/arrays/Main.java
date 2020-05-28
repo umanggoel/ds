@@ -22,9 +22,13 @@ public class Main {
         MergeSortedArrays mergeSortedArrays = new MergeSortedArrays();
        // mergeSortedArrays.merge(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3);
 
-        MaxProduct.maxProduct(new int[]{-2,3,-4});
+        //MaxProduct.maxProduct(new int[]{-2,3,-4});
 
         PrefixOfWord prefixOfWord = new PrefixOfWord();
-        System.out.println(prefixOfWord.isPrefixOfWord("i love eating burg","burg"));
+      //  System.out.println(prefixOfWord.isPrefixOfWord("i love eating burg","burg"));
+
+        int[][] stones = new int[][]{{1,0,1},{0,1,0},{1,0,1}};
+        StonesRemovalGame stonesRemovalGame = new StonesRemovalGame();
+        stonesRemovalGame.removeStones(stones);
     }
 }
