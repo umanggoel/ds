@@ -118,6 +118,19 @@ public class Main {
        // stonesRemovalGame.removeStones(stones);
 
         MinSwapCouples minSwapCouples =new MinSwapCouples();
-        minSwapCouples.minSwapsCouples(new int[]{5,4,2,6,3,1,0,7});
+       // minSwapCouples.minSwapsCouples(new int[]{5,4,2,6,3,1,0,7});
+
+        int aedges[][] = {{0,3},{1,3},{2,3},{4,3},{5,4}};
+       // int aedges[][] = {};
+        MinimumHeightTrees minimumHeightTrees = new MinimumHeightTrees();
+       // minimumHeightTrees.findMinHeightTrees(6,aedges);
+
+        CourseSchedule4 courseSchedule4 = new CourseSchedule4();
+        int n = 5;
+        int pre[][] =  {{0,1},{1,2},{2,3},{3,4}};
+       // int qu[][]={{0,4},{4,0},{1,3},{3,0}};
+        int qu[][]={{0,4}};
+
+        courseSchedule4.checkIfPrerequisite(n,pre,qu);
     }
 }

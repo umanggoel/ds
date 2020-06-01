@@ -1,5 +1,7 @@
 package com.company.arrays;
 
+import com.company.graph.CourseSchedule;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,6 +31,30 @@ public class Main {
 
         int[][] stones = new int[][]{{1,0,1},{0,1,0},{1,0,1}};
         StonesRemovalGame stonesRemovalGame = new StonesRemovalGame();
-        stonesRemovalGame.removeStones(stones);
+      //  stonesRemovalGame.removeStones(stones);
+
+        LongestConsecutiveSequence128 longestConsecutiveSequence128= new LongestConsecutiveSequence128();
+        //longestConsecutiveSequence128.longestConsecutive(new int[]{100, 4, 200, 1, 3, 2});
+
+        CourseSchedule courseSchedule = new CourseSchedule();
+        //courseSchedule.canFinish(4,new int[][]{{0,1},{3,1},{1,3},{3,2}});
+        //courseSchedule.canFinish(3,new int[][]{{0,1},{0,2},{1,2}});
+
+       // courseSchedule.findOrder(2,new int[][]{{0,1}});
+
+        MinFibonicciSum minFibonicciSum = new MinFibonicciSum();
+       // System.out.println(minFibonicciSum.findMinFibonacciNumbers(1000000));
+
+        int mat [][] = {{9,9,4},
+                {6,6,8},
+                {2,1,1}};
+        LongestIncreasingPath longestIncreasingPath = new LongestIncreasingPath();
+        //longestIncreasingPath.longestIncreasingPath(mat);
+
+        int mat1 [][] = {{2,1,1},
+                {1,1,0},
+                {0,1,1}};
+        RottingOranges rottingOranges = new RottingOranges();
+        rottingOranges.orangesRotting(mat1);
     }
 }
