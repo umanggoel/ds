@@ -51,10 +51,17 @@ public class Main {
         LongestIncreasingPath longestIncreasingPath = new LongestIncreasingPath();
         //longestIncreasingPath.longestIncreasingPath(mat);
 
-        int mat1 [][] = {{2,1,1},
-                {1,1,0},
-                {0,1,1}};
+//        int mat1 [][] = {{2,1,1},
+//                {0,1,1},
+//                {1,0,1}};
+        int mat1 [][] = {{1}};
         RottingOranges rottingOranges = new RottingOranges();
-        rottingOranges.orangesRotting(mat1);
+  //      System.out.println(rottingOranges.orangesRotting(mat1));
+        int grid [][] = {{1,1,1,1,1},
+                {1,0,0,0,1},
+                {1,0,1,0,1},
+                {1,0,0,0,1}};
+        ShortestBridge shortestBridge = new ShortestBridge();
+        shortestBridge.shortestBridge(grid);
     }
 }
