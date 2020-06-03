@@ -14,7 +14,11 @@ public class Main {
        // System.out.println(binaryStringmatching.hasAllCodes("0000000001011100",4));
 
       // System.out.println(Calculator.calculate("0-2147483647"));
-        System.out.println(Calculator.calculate2("2-(5-6)"));
+     //   System.out.println(Calculator.calculate2("2-(5-6)"));
+
+        GroupString groupString = new GroupString();
+        //System.out.println(groupString.numSimilarGroups(new String[]{"kccomwcgcs","socgcmcwkc","sgckwcmcoc","coswcmcgkc","cowkccmsgc","cosgmccwkc","sgmkwcccoc","coswmccgkc","kowcccmsgc","kgcomwcccs"}));
+        System.out.println(groupString.numSimilarGroups(new String[]{"abc","abc"}));
 
     }
 }
