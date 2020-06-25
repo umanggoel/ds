@@ -16,6 +16,9 @@ public class RateLimiter {
         };
 
         Function rateLimit = rateLimit(myFunc,500,5);
+        Function rateLimit2 = rateLimit(myFunc,510,6);
+
+
             rateLimit.apply("1");
             rateLimit.apply("2");
             rateLimit.apply("3");
