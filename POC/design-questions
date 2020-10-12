@@ -1,0 +1,41 @@
+1. How to design an online chess game. The questions asked were how will you assign a player to another player who wants to play. You need to think about how to divide your players into multiple groups of ratings, so that a newbie is not playing a grand master, rather with someone who is of his level only. Then the question was how will you design your system when a player comes in and say I want to play, and the max wait time is 1 min, you need to find a player suitable for his level and think about multiple race conditions.
+
+2. Design a music player application. Eg support for sd card
+
+3. Distributed LRU cache
+
+4. Design Gmail. Scalability, redundancy, CAP theorem, class diagram, db schema, how to handle attachments.
+
+5. There is a passport office with 3 desks abc and a token machine. Every person visits each counter in sequence after taking the token when the token number is displayed on the counter.
+
+6. OOD of parking lot
+
+7. Geographically partitioned multi player card game that supports multiple players , multiple games at the same time.Each game will have one contractor like in the bar. He can play a game or just watch.
+
+8. Design Netflix.
+
+9. Upload images and tag them, ability to search images with two or more tags.
+
+10. Online shipment tracking system
+
+11. Facebook timeline
+
+12. Amazon flash sales
+
+13. Book my show design
+
+14. File converter converting xml to son etc
+
+15. Design amazon locker
+
+16. Online meeting room booking system
+
+17. Design load balancer algorithm. Divide traffic in n the ratio of 5, 40,10
+
+18. Design google auto complete feature
+
+19. Deign elevator
+
+20. Design debugger
+
+21. Designing Typeahead Suggestion
