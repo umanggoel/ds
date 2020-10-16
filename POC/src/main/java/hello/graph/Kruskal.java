@@ -31,12 +31,7 @@ public class Kruskal {
 
     List<Edge> minSpanningTree(){
         List<Edge> result = new ArrayList<>();
-        edges.sort(new Comparator<Edge>() {
-            @Override
-            public int compare(Edge o1, Edge o2) {
-                return o1.weight-o2.weight;
-            }
-        });
+        edges.sort((o1, o2) -> o1.weight-o2.weight);
 
         for(Edge e : edges){
             if(!graphNodes.connected(e.node1.value,e.node2.value)){
