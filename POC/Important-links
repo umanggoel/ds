@@ -1,0 +1,129 @@
+https://medium.com/walmartlabs/an-approach-to-designing-distributed-fault-tolerant-horizontally-scalable-event-scheduler-278c9c380637
+
+https://medium.com/@kapil.sharma91812/how-to-design-job-scheduler-8a2ef858f32
+
+https://leetcode.com/discuss/interview-question/system-design/344524/design-a-jobtask-scheduler
+
+https://articles.microservices.com/designing-a-cron-scheduler-microservice-18a52471d13f
+
+https://github.com/PagerDuty/scheduler/blob/master/doc/design.md
+
+https://docs.newrelic.com/docs/understand-dependencies/distributed-tracing/get-started/how-new-relic-distributed-tracing-works#sampling
+
+https://www.youtube.com/watch?v=aCjTOwwfJrI&list=RDCMUCkQX1tChV7Z7l1LFF4L9j_g&start_radio=1
+
+https://druid.apache.org/
+
+https://lethain.com/introduction-to-architecting-systems-for-scale/
+
+OSI:
+https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/
+
+PUSH messaging
+https://www.youtube.com/watch?v=6w6E_B55p0E
+https://www.ably.io/concepts/socketio
+
+Instagram
+https://www.youtube.com/watch?v=hnpzNAPiC0E
+
+Implement a Logger
+https://www.youtube.com/watch?v=FKA2KgkkcqY
+
+Parking lot
+https://www.youtube.com/watch?v=tVRyb4HaHgw
+
+Machine learning
+https://www.coursera.org/learn/machine-learning/lecture/1VkCb/supervised-learning
+https://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
+
+Microservices:
+https://www.youtube.com/watch?v=CZ3wIuvmHeM
+
+Facebook live:
+https://www.youtube.com/watch?v=IO4teCbHvZw
+
+TextSearch
+https://stackoverflow.com/questions/56308628/how-can-we-design-system-for-document-search
+https://www.toptal.com/algorithms/needle-in-a-haystack-a-nifty-large-scale-text-search-algorithm
+https://en.wikipedia.org/wiki/Database_index
+
+Proxy servers
+https://en.wikipedia.org/wiki/Proxy_server
+https://youtu.be/KTIT6XJtJWg
+
+Reactive:
+https://github.com/reactive-streams/reactive-streams-jvm
+https://projectreactor.io/learn
+https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html
+
+Implement a mail server like gmail
+
+Load Balancers:
+https://avinetworks.com/what-is-load-balancing/
+
+Sequence Diagram:
+https://sequencediagram.org/
+
+Resiliency
+https://blog.gojekengineering.com/resiliency-in-distributed-systems-efd30f74baf4
+https://blog.gojekengineering.com/how-to-build-resilience-in-large-scale-distributed-systems-ddd1496b6c0
+
+HTTPS:
+https://www.youtube.com/watch?v=T4Df5_cojAs&ab_channel=kubucation
+
+Database Locking:
+https://medium.com/@recepinancc/til-9-optimistic-vs-pessimistic-locking-79a349b76dc8#:~:text=Optimistic%20Locking%20is%20when%20you,can%20start%20modifying%20the%20record
+https://docs.mongodb.com/manual/faq/concurrency/
+
+
+Twitter Blog:
+https://blog.twitter.com/engineering/en_us.html
+
+Garbage Collection
+
+
+GIT Diff
+https://stackoverflow.com/questions/36922197/how-does-git-status-work-internally
+https://neil.fraser.name/writing/diff/
+https://blog.jcoglan.com/2017/02/12/the-myers-diff-algorithm-part-1/
+https://www.cs.dartmouth.edu/~doug/diff.pdf
+https://www.w3.org/DesignIssues/Diff
+
+
+Interview experiences
+https://leetcode.com/discuss/interview-question/object-oriented-design/?currentPage=1&orderBy=hot&query=
+
+Chess Game
+https://www.youtube.com/watch?v=RVHNcng0oF0&ab_channel=UditAgarwal
+https://www.geeksforgeeks.org/design-a-chess-game/
+
+Vending machine
+https://medium.com/swlh/vending-machine-design-a-state-design-pattern-approach-5b7e1a026cd2
+https://javarevisited.blogspot.com/2016/06/design-vending-machine-in-java.html
+
+Elevator design
+https://medium.com/system-designing-interviews/design-a-elevator-system-fc5832ca0b8b
+https://www.cs.cmu.edu/~luluo/Courses/18540PhDreport.pdf
+https://massivetechinterview.blogspot.com/2015/07/thought-works-object-oriented-design.html
+
+Stock exchange
+https://www.youtube.com/watch?v=dUMWMZmMsVE&ab_channel=TechDummies
+
+Perfect singleton
+https://medium.com/@kevalpatel2106/how-to-make-the-perfect-singleton-de6b951dfdb0
+
+https://hackernoon.com/the-top-10-object-oriented-design-interview-questions-developers-should-know-c7fc2e13ce39
+
+https://pythonprogramming.net/machine-learning-tutorial-python-introduction/
+
+https://pythonprogramming.net/functions-learn-python-3-tutorials
+
+https://www.youtube.com/watch?v=7giZGFDGnkc&list=PL55RiY5tL51rG1x02Yyj93iypUuHYXcB_
+
+https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/
+
+https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/
+
+https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/java-admin-cluster.html
+
+https://docs.datadoghq.com/tracing/setup/java/
