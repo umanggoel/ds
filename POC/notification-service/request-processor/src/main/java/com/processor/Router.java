@@ -1,5 +1,6 @@
 package com.processor;
 
+import com.commons.exceptions.NotificationTechnicalException;
 import com.models.MessagePriorityEnum;
 import com.models.NotificationMessage;
 import com.queueprocessor.producer.NotificationLogger;
@@ -19,7 +20,7 @@ public class Router {
         queueMap.put(MessagePriorityEnum.LOW ,"low");
     }
 
-    public void publishMessage(NotificationMessage message) {
+    public void publishMessage(NotificationMessage message) throws NotificationTechnicalException {
         notificationLogger.log(message.getMessageId(), queueMap.get(message.getPriority()), message);
     }
 }

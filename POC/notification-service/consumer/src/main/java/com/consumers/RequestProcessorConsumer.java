@@ -1,5 +1,6 @@
 package com.consumers;
 
+import com.commons.exceptions.NotificationTechnicalException;
 import com.models.NotificationMessage;
 import com.processor.ProcessorResolver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,11 @@ public class RequestProcessorConsumer {
 
     public void consumer(NotificationMessage message, String key,
                          String  partition, Long offset) {
-        processorResolver.doProcessing(message);
+        try {
+            processorResolver.doProcessing(message);
+        } catch (NotificationTechnicalException e) {
+            e.printStackTrace();
+        }
     }
 
     String getConsumerName() {

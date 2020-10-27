@@ -1,5 +1,6 @@
 package com.processor.regularprocessor;
 
+import com.commons.exceptions.NotificationTechnicalException;
 import com.models.NotificationMessage;
 import com.models.MessageTypeEnum;
 import com.processor.Processor;
@@ -19,7 +20,7 @@ public class RegularNotificationProcessor implements Processor {
     }
 
     @Override
-    public void process(NotificationMessage notification) {
+    public void process(NotificationMessage notification) throws NotificationTechnicalException {
         router.publishMessage(notification);
     }
 

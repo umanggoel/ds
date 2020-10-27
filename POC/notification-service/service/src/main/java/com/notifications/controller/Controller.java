@@ -1,5 +1,7 @@
 package com.notifications.controller;
 
+import com.commons.exceptions.InvalidInputExpception;
+import com.commons.exceptions.NotificationTechnicalException;
 import com.models.NotificationMessage;
 import com.notifications.models.NotificationRequest;
 import com.queueprocessor.producer.NotificationLogger;
@@ -30,7 +32,7 @@ public class Controller {
 
     @PostMapping(value = "notification-service/v1/notifications")
     @ResponseStatus(ACCEPTED)
-    public void test(@RequestBody NotificationRequest notification)
+    public void publishNotifications(@RequestBody NotificationRequest notification) throws InvalidInputExpception, NotificationTechnicalException
     {
         NotificationMessage notificationMessage = conversionService.convert(notification, NotificationMessage.class);
         validatorManager.applyValidations(notificationMessage);

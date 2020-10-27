@@ -1,5 +1,6 @@
 package com.processor.scheduledprocessor;
 
+import com.commons.exceptions.NotificationTechnicalException;
 import com.models.NotificationMessage;
 import com.models.MessageTypeEnum;
 import com.processor.Processor;
@@ -23,13 +24,14 @@ public class ScheduledNotificationProcessor implements Processor {
     }
 
     @Override
-    public void process(NotificationMessage notification) {
+    public void process(NotificationMessage notification) throws NotificationTechnicalException {
         if(notification.getScheduleTime() != null) {
             LOGGER.error("Notification is not a Scheduled type message");
+            return;
         }
 
         Long currentTimestamp = System.currentTimeMillis();
-        if(notification.getTtl() != null){
+        if(notification.getTtl() == null){
             notification.setTtl(notification.getScheduleTime());
             scheduledMessageRepositoryManager.save(notification);
         } else if(notification.getTtl() <= currentTimestamp) {

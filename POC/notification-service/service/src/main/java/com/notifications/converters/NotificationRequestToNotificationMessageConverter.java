@@ -16,15 +16,20 @@ public class NotificationRequestToNotificationMessageConverter implements Conver
     @Override
     public NotificationMessage convert(NotificationRequest notificationRequest) {
 
-        List<NotificationMode> notificationModes = notificationRequest.getNotificationModes()
-                .stream().map(e ->{
-                    return newNotificationMode()
-                            .email(e.getEmail())
-                            .mode(e.getMode())
-                            .phoneNumber(e.getPhoneNumber())
-                            .templateName(e.getTemplateName())
-                            .build();
-                }).collect(toList());
+        List<NotificationMode> notificationModes = null;
+
+        if(notificationRequest.getNotificationModes() != null){
+            notificationModes = notificationRequest.getNotificationModes()
+                    .stream().map(e -> {
+                return newNotificationMode()
+                        .email(e.getEmail())
+                        .mode(e.getMode())
+                        .phoneNumber(e.getPhoneNumber())
+                        .templateName(e.getTemplateName())
+                        .build();
+            }).collect(toList());
+        }
+
 
         return NotificationMessage.newNotificationMessage()
                 .isDigest(notificationRequest.isDigest())

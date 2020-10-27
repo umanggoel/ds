@@ -1,5 +1,6 @@
 package com.processor.digestprocessor;
 
+import com.commons.exceptions.NotificationTechnicalException;
 import com.models.NotificationMessage;
 import com.models.MessageTypeEnum;
 import com.processor.Processor;
@@ -28,19 +29,21 @@ public class DigestNotificationProcessor implements Processor {
     }
 
     @Override
-    public void process(NotificationMessage notification) {
+    public void process(NotificationMessage notification) throws NotificationTechnicalException {
         if(!notification.isDigest()) {
             LOGGER.error("Notification is not a digest type message");
+            return;
         }
 
         Long currentTimestamp = System.currentTimeMillis();
 
-        if(notification.getTtl() != null){
+        if(notification.getTtl() == null){
             String key = notification.getNotificationModes().get(0).getEmail();
             NotificationMessage messageToSave = digestMessageRepositoryManager.getNotification(key);
             if(messageToSave != null) {
                 messageToSave.getDigestMessages().add(notification);
             }else{
+                messageToSave = notification;
                 messageToSave.setTtl(currentTimestamp+digestTimeinMillis);
                 messageToSave.setDigestMessages(asList(notification));
             }
