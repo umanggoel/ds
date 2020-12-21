@@ -60,11 +60,10 @@ public class KSum {
         return result;
     }
 
-    public List<List<Integer>> threeSum(int[] nums) {
+    public <T> List<List<Integer>> threeSum(int[] nums) {
         int target = 0;
         List<List<Integer>> result = new ArrayList<>();
         HashMap<Integer,List<List<Integer>>> sums = new HashMap<>();
-
         for(int i=0;i<nums.length;i++){
             for(int j=i+1;j<nums.length;j++){
                 List<Integer> temp= Arrays.asList(i,j);

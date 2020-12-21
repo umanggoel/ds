@@ -38,6 +38,7 @@ public class BuddyString {
             }
         }
 
+        String s = "ss";
         if( adiff.size() != 2 || bdiff.size() != 2) return false;
 
         adiff.sort((c1, c2)->c1-c2);

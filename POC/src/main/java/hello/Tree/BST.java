@@ -24,7 +24,6 @@ public class BST {
         }
         node.left = constructBST(preorder,start+1,index);
         node.right = constructBST(preorder, index,end);
-
         return node;
     }
 }
