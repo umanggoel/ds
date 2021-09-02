@@ -18,4 +18,6 @@ public class SpotsManager {
         return true;
     }
 
+    //addSpot
+
 }

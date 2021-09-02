@@ -2,16 +2,22 @@ package com.company.design.parkingLot2;
 
 import com.company.design.parkingLot2.model.Ticket;
 
+
+// multiple entry and exit points
+// multiple type of vehicles
+// multiple type of charges
+// optimizations like nearest spot etc.
 public class PakingLot {
 
      SpotsManager spotsManager;
      GatesManager gatesManager;
 
      boolean checkAvailability(String vehicleType) {
-        return spotsManager.isSpotAvailable(vehicleType);
+         return spotsManager.isSpotAvailable(vehicleType);
      }
 
-     Ticket generateTicket(String type, int vehicleId, int gateId) throws Exception{
+     Ticket issueTicket(String type, int vehicleId, int gateId) throws Exception{
+
          if(spotsManager.reserveSpot(type)) {
              return gatesManager.generateTicket(type, vehicleId, gateId);
          }

@@ -1,10 +1,14 @@
 package com.company.design.parkingLot2.model;
 
-import com.company.design.parkingLot2.model.Gate;
-
 import java.util.Map;
 
 public class Gates {
 
-    Map<Integer, Gate> gates;
+    Map<String, Map<Integer, Gate>> gates;
+
+    //check the vechicle allowed
+
+    public boolean isALlowed(String vehicleType, Integer gateId, String gateType) {
+        return true;
+    }
 }

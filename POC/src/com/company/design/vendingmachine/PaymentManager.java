@@ -1,6 +1,8 @@
 package com.company.design.vendingmachine;
 
 import com.company.design.vendingmachine.exceptions.PaymentFailedException;
+import com.company.design.vendingmachine.payment.PaymentMechanism;
+import com.company.design.vendingmachine.payment.PaymentMechanismManager;
 
 public class PaymentManager {
 

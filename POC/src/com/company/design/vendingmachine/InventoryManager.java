@@ -12,9 +12,8 @@ public class InventoryManager {
     }
 
     public Item getItemDetails(String code) {
-        return null;
+        return inventory.getItemDetails(code);
     }
-
 
     public int getItemPrice(String code) {
         return 0;

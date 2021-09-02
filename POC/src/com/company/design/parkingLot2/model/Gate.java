@@ -1,9 +1,12 @@
 package com.company.design.parkingLot2.model;
 
+import java.util.Set;
+
 public class Gate {
 
     private int id;
     private String type;
+    Set<String> vehiclesAllowed;
 
     public String getType() {
         return type;

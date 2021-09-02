@@ -4,4 +4,6 @@ public class Card implements PaymentMechanisms {
     @Override
     public void acceptPayment(int price, int userAmount) {
     }
+
+
 }

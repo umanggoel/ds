@@ -1,5 +1,6 @@
 package com.company.design.parkingLot2;
 
+import com.company.design.parkingLot2.model.Gates;
 import com.company.design.parkingLot2.model.Ticket;
 import com.company.design.parkingLot2.payments.PaymentManager;
 import com.company.design.parkingLot2.pricing.PricingManager;
@@ -11,6 +12,7 @@ public class GatesManager {
     TicketManager ticketManager;
     PaymentManager paymentManager;
     PricingManager pricingManager;
+    Gates gates;
 
     Ticket generateTicket(String type, int vehicleId, int gateId) {
         return ticketManager.generateTicket();
@@ -27,4 +29,6 @@ public class GatesManager {
        paymentManager.acceptPayment(paymentType, price, userAmount);
        return true;
     }
+
+    //gates and vehcile allowed
 }

@@ -11,5 +11,7 @@ public class Spots {
         return true;
     }
 
+    //addspot
+
 
 }

@@ -4,7 +4,9 @@ public class ParkingSpot {
 
     private int id;
 
-    private String type;
+    private String type; // small, medium , big, electric
+
+    private boolean hasCharger;    //isAvailable
 
     public int getId() {
         return id;

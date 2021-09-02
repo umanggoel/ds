@@ -1,10 +1,6 @@
 package com.company.arrays;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 //https://leetcode.com/problems/top-k-frequent-words/
 public class TOPKFrequentWords {
@@ -33,4 +29,24 @@ public class TOPKFrequentWords {
 
         return top;
     }
+
+        public int[] topKFrequent(int[] nums, int k) {
+
+            Map<Integer, Integer> map = new TreeMap();
+
+            for(int i: nums) {
+                map.put(i, map.getOrDefault(i, 0)+1);
+            }
+
+            Set<Map.Entry<Integer, Integer>> set = map.entrySet();
+
+            int result[] = new int[set.size()];
+                int count  =0;
+            for(Map.Entry e: set) {
+                result[count++] = (int)e.getKey();
+            }
+
+            return Arrays.copyOfRange(result, set.size()-k, set.size());
+
+        }
 }
